@@ -1,0 +1,9 @@
+{
+    "name": "devcontainer",
+    "workspaceFolder": "/workspace",
+    "service": "devcontainer",
+    "dockerComposeFile": "./development-compose.yml",
+    "extensions": [],
+    "postCreateCommand": "mkdir -p ~/.ssh && cp -r ~/.ssh-host/* ~/.ssh && chmod 700 ~/.ssh && chmod 600 ~/.ssh/*",
+    "shutdownAction": "stopCompose"
+}
